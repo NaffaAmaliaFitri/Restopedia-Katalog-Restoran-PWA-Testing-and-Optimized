@@ -1,0 +1,190 @@
+@media screen and (max-width: 360px) {
+  .nav_list.active {
+    display: block;
+  }
+
+  .restaurants {
+    grid-template-columns: 1fr;
+  }
+
+  .detailresto_title {
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .testimoni-label {
+    font-size: 20px;
+  }
+  .detailresto_desc {
+    margin-top: 20px;
+  }
+  .resto-label {
+    margin-top: 20px;
+  }
+
+  .restaurant .detailresto_desc {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  #lembar-ulasan {
+    width: 100%;
+
+    padding: 10px;
+  }
+
+  #lembar-ulasan h1 {
+    font-size: 20px;
+  }
+
+  #lembar-ulasan input[type='text'] {
+    font-size: 14px;
+    padding: 1px;
+    width: calc(100% - 5px);
+  }
+
+  #lembar-ulasan .input-name {
+    height: 40px;
+  }
+
+  #lembar-ulasan .input-content {
+    height: 200px;
+  }
+
+  #lembar-ulasan .button-container {
+    margin-right: 0;
+  }
+
+  #lembar-ulasan button {
+    font-size: 12px;
+    padding: 5px 8px;
+    max-width: 70px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  #nav_mobile {
+    display: block;
+  }
+  .nav {
+    z-index: 9999;
+    width: 100%;
+    position: absolute;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s ease;
+  }
+
+  .nav.open {
+    transform: translate(0, 0);
+  }
+
+  .nav_item {
+    width: 85%;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 678px) {
+  #nav_mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 678px) {
+  .nav_mobile {
+    display: none;
+  }
+
+  .menu_mobile {
+    display: none;
+  }
+
+  .nav-list {
+    margin-top: -3.5em;
+    margin-right: 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav_list.active {
+    display: block;
+  }
+
+  .restaurants {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant {
+    display: block;
+  }
+
+  .detailresto_title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .detailresto_desc {
+    margin-top: 20px;
+  }
+  .resto-label {
+    margin-top: 20px;
+  }
+
+  .restaurant .detailresto_desc {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media (max-width: 600px) {
+  #lembar-ulasan {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #lembar-ulasan input[type='text'] {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #lembar-ulasan .input-name {
+    height: 40px;
+  }
+
+  #lembar-ulasan .input-content {
+    height: 100px;
+  }
+
+  #lembar-ulasan button {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .restaurants {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .restaurants {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .detailresto_section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .restaurants {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
